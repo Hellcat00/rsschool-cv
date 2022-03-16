@@ -27,6 +27,10 @@
 
 * JavaScript 
 
+* SCCS/SASS
+
+* Gulp 
+
 ```
 
 function deepCount(a){
