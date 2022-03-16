@@ -4,7 +4,8 @@
 
 ### future web developer 
 
-
+*I am 25 years old working in the food industry. I am fond of development and I hope to master a new profession.*
+*I have two sons, two cats and a dog :)*
 
 **Contacts:** 
 
