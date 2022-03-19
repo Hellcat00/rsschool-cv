@@ -1,15 +1,18 @@
 body {
     background: rgb(54, 54, 54);
+    font-family: 'Montserrat', sans-serif;
 }
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
+    min-height: calc(100vh - 150px);
 }
 .column-left {
     flex: 2;
     background: #000;
     color: rgb(199, 199, 199);
+    border-right: 2px solid rgb(199, 199, 199);
 }
 .column-right {
     flex: 4;
@@ -25,9 +28,11 @@ body {
 h1 {
     padding: 40px 0 20px 0;
     font-size: 35px;
+    font-weight: 500;
 }
 h3 {
     font-size: 18px;
+    font-weight: 500;
 }
 .menu {
     display: flex;
@@ -37,20 +42,26 @@ h3 {
     text-align: center;
     align-items: center;
     gap: 25px;
+    font-weight: 500;
 }
 .menu-link {
     display: block;
-    width: 120px;
-    padding: 5px 0;
+    width: 130px;
+    padding: 10px 10px;
     background: rgb(199, 199, 199);
     color: #000;
     border-radius: 5px;
+}
+.menu-link:hover {
+    background: aqua;
+    transition: 0.3s;
 }
 .contact {
     text-align: center;
 }
 h2 {
-    font-size: 25px;
+    font-size: 28px;
+    font-weight: 500;
     padding: 10px 0 20px 0;
 }
 .contact-list {
@@ -58,16 +69,58 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    align-items: center;
+    font-size: 18px;
 }
 .contact-link {
     display: flex;
     padding: 5px;
     background: #000;
     align-items: center;
-
 }
 .icon {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     fill: #fff;
+    padding-right: 10px;
+}
+.contact-item:hover {
+    color: aqua;
+    transition: 0.3s;
+}
+.footer {
+    height: 150px;
+    background: #000;
+    max-width: 1440px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid rgb(199, 199, 199);
+}
+.footer-block {
+    border-radius: 5px;
+    background: rgb(199, 199, 199);
+    padding: 10px 10px;
+}
+a.footer-block:hover {
+    background: aqua;
+    transition: 0.3s;
+}
+.rs {
+    display: flex;
+    height: 70px;
+}
+.gh {
+    display: flex;
+    height: 70px;
+}
+.year {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
 }
