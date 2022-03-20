@@ -55,7 +55,7 @@ h3 {
     border-radius: 5px;
 }
 .menu-link:hover {
-    background: aqua;
+    background: linear-gradient(225deg, rgb(0, 255, 255), rgb(68, 169, 172));
     transition: 0.3s;
 }
 .contact {
@@ -107,7 +107,7 @@ h2 {
     padding: 10px 10px;
 }
 a.footer-block:hover {
-    background: aqua;
+    background: linear-gradient(225deg, rgb(0, 255, 255), rgb(68, 169, 172));    
     transition: 0.3s;
 }
 .rs {
@@ -184,10 +184,11 @@ pre {
 .block-prod {
     margin: 0 auto;
     width: 90%;
-    border: 3px solid aqua;
+    border: 2px solid aqua;
     border-radius: 5px;
     display: none;
     overflow: hidden;
+    min-height: 500px;
 }
 
 /* **************   SLIDER   *************** */
@@ -259,10 +260,18 @@ pre {
     transition-duration: 0s;
 }
 
+/* ***************   OTHER  ****************** */
 
-
-
-
+.other {
+    padding: 20px;
+}
+.other-link {
+    font-size: 18px;
+}
+.other-link:hover {
+    color: aqua;
+    transition: 0.3s;
+}
 
 
 
@@ -270,5 +279,5 @@ pre {
     display: block;
 }
 .active-btn {
-    background: aqua;
+    background: linear-gradient(225deg, rgb(0, 255, 255), rgb(68, 169, 172));
 }
