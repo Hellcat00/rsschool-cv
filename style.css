@@ -53,9 +53,10 @@ h3 {
     background: rgb(199, 199, 199);
     color: #000;
     border-radius: 5px;
+    font-weight: 700;
 }
 .menu-link:hover {
-    background: linear-gradient(225deg, rgb(0, 255, 255), rgb(68, 169, 172));
+    background: aqua;
     transition: 0.3s;
 }
 .contact {
@@ -90,6 +91,9 @@ h2 {
     color: aqua;
     transition: 0.3s;
 }
+.contact-small {
+    display: none;
+}
 .footer {
     height: 150px;
     background: #000;
@@ -107,7 +111,7 @@ h2 {
     padding: 10px 10px;
 }
 a.footer-block:hover {
-    background: linear-gradient(225deg, rgb(0, 255, 255), rgb(68, 169, 172));    
+    background: aqua;    
     transition: 0.3s;
 }
 .rs {
@@ -188,13 +192,13 @@ pre {
     border-radius: 5px;
     display: none;
     overflow: hidden;
-    min-height: 500px;
+    height: 500px;
 }
 
 /* **************   SLIDER   *************** */
 
 .slider {
-    max-height: 700px;
+    height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -208,8 +212,7 @@ pre {
     position: relative;
     cursor: pointer;
     transition: 0.4s ease-in;
-    min-height: 500px;
-    max-height: 700px;
+    height: 450px;
 }
 .slide h3 {
     color: rgb(199, 199, 199);
@@ -223,7 +226,6 @@ pre {
     bottom: 10px;
     left: 30px;
     opacity: 0;
-
 }
 .slide img {
     width: 100%;
@@ -246,7 +248,7 @@ pre {
     align-items: center;
     max-width: 1000px;
     flex-wrap: wrap;
-    max-height: 700px;
+    height: 500px;
 }
 .square {
     width: 16px;
@@ -273,11 +275,128 @@ pre {
     transition: 0.3s;
 }
 
-
+/* ***********   ACTIVE   ********** */
 
 .active {
     display: block;
 }
 .active-btn {
-    background: linear-gradient(225deg, rgb(0, 255, 255), rgb(68, 169, 172));
+    background: aqua;
+}
+
+/* ***********   MEDIA   *********************** */
+
+@media (max-width: 1130px) {
+    .wrapper {
+        max-width: 1130px;
+    }
+    .menu-slide, .menu-board, .menu-other {
+        width: 80px;
+    }
+    .block {
+        margin: 50px;
+        padding: 20px;
+    }
+}
+@media (max-width: 960px) {
+    .wrapper {
+        max-width: 960px;
+    }
+    .photo-img {
+        width: 200px;
+    }
+    .contact-list {
+        gap: 5px;
+        font-size: 14px;
+    }
+    .column-left {
+        flex: 1;    
+    }
+    .column-right {
+        flex: 3;
+    }
+    .block {
+        margin: 30px;
+        padding: 10px;
+    }
+}
+@media (max-width: 770px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu {
+        gap: 0;
+        padding: 30px 20px;
+        flex-direction: row;
+        justify-content: space-around;
+        border-bottom: 2px solid rgb(199, 199, 199);
+    }
+    .menu-link {
+        width: 100px;
+    }
+    .contact {
+        display: none;
+    }
+    .contact-small {
+        border: 2px solid rgb(199, 199, 199);
+        border-bottom: 0px;
+        text-align: center;
+        display: block;
+        background: #000;
+        color: rgb(199, 199, 199);
+    }
+    .contact-list {
+        padding: 10px 0 20px 0;
+        gap: 5px;
+        align-items: center;
+        font-size: 18px;
+    }
+    .contact-link {
+        display: flex;
+        padding: 5px;
+        background: #000;
+        align-items: center;
+    }
+    .footer {
+        height: 100px;
+        border-top: 0px;
+    }
+    .block {
+        height: 700px;
+        margin: 20px 0;
+        padding: 20px;
+    }
+}
+@media (max-width: 540px) {
+    .block {
+        height: 500px;
+    }
+    .container {
+        height: 300px;
+    }
+    .block-prod {
+        height: 300px;
+    }
+    .slider {
+        height: 300px;
+    }
+    .slide {
+        height: 250px;
+    }
+    .rs {
+        height: 50px;
+    }
+    .gh {
+        height: 50px;
+    }
+    .year {
+        height: 50px;
+    }
+    .menu-link {
+        font-size: 14px;
+        font-weight: 700;
+        width: 85px;
+        padding: 10px 5px;
+    }
 }
