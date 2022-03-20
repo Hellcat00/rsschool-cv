@@ -26,13 +26,13 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <a href="#" class="menu-link">About me</a>
+                        <a href="#" class="menu-link menu-about active-btn">About me</a>
                     </li>
                     <li>
-                        <a href="#" class="menu-link">Skills</a>
+                        <a href="#" class="menu-link menu-skill">Skills</a>
                     </li>
                     <li>
-                        <a href="#" class="menu-link">Project</a>
+                        <a href="#" class="menu-link menu-prod">Project</a>
                     </li>
                 </ul>
             </nav>
@@ -70,14 +70,102 @@
                 </ul>
             </div>
         </div>
-        <div class="column-right">
+        <main class="column-right">
+            <div class="block about active">
+                <h2>About me</h2>
+                <p>I am 25 years old working in the food industry. I am fond of development and I hope to master a new profession.
+                I have two sons, two cats and a dog :)</p>
+                <h2>Education</h2>
+                <p>I have no education in the field of the web yet.
+                </p>
+                <p>English level A1</p>
+            </div>
+            <div class="block skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>
+                        <svg class="icon-ok">
+                        <use xlink:href="img/icons/sprite.svg#ok"></use>
+                        </svg>HTML/CSS
+                    </li>
+                    <li>
+                        <svg class="icon-ok">
+                        <use xlink:href="img/icons/sprite.svg#ok"></use>
+                        </svg>Git
+                    </li>
+                    <li>
+                        <svg class="icon-ok">
+                        <use xlink:href="img/icons/sprite.svg#ok"></use>
+                        </svg>JavaScript
+                    </li>
+                    <li>
+                        <svg class="icon-ok">
+                        <use xlink:href="img/icons/sprite.svg#ok"></use>
+                        </svg>SCCS/SASS
+                    </li>
+                    <li>
+                        <svg class="icon-ok">
+                        <use xlink:href="img/icons/sprite.svg#ok"></use>
+                        </svg>Gulp
+                    </li>
+                </ul>
+                <pre>
+                    function deepCount(a){
+                        let sum = 0
+                        function func(arr) {
+                        for (let elem of arr) {
+                            if (typeof elem == 'object') {
+                            sum += elem.length;
+                                func(elem)
+                            } else {
+                            continue
+                            }
+                        }
+                        return sum+arr.length;
+                        }
+                        return func(a)
+                    }
+                </pre>
+            </div>
+            <div class="block project">
+                <h2>Project</h2>
+                <div class="btn-block">
+                    <button class="menu-link menu-slide active-btn">Slide</button>
+                    <button class="menu-link menu-board">Board</button>
+                    <button class="menu-link menu-other">Other</button>
+                </div>
+                <div class="block-prod sliders active">
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="img/slide/forest1.jpg" alt="">
+                            <h3>Slide 1</h3>
+                        </div>
+                        <div class="slide">
+                            <img src="img/slide/forest2.jpg" alt="">
+                            <h3>Slide 2</h3>
+                        </div>
+                        <div class="slide">
+                            <img src="img/slide/forest3.jpg" alt="">
+                            <h3>Slide 3</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-prod board">
+                    <div class="container" id="board">
 
-        </div>
+                    </div>
+                </div>
+                <div class="block-prod other">
+                    
+                </div>
+            </div>
+        </main>
     </div>
     <footer class="footer">
         <a class="gh footer-block" href="https://github.com/Hellcat00"><img src="img/github_logo_icon_168170.svg" alt=""></a>
         <span class="year footer-block">2022</span>
         <a class="rs footer-block" href=""><img src="img/rs_school_js.svg" alt=""></a>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
